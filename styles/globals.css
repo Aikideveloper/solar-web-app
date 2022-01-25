@@ -1,0 +1,40 @@
+@import "flexBox.css";
+@import "spacing.css";
+@import "grid.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-primary {
+  color: #fbae00
+}
+
+.c-gray-1 {
+  color: #c2c2c2 !important;
+}
+
+.c-gray-2 {
+  color: #9b9b9b !important;
+}
+
+.default-text {
+  font-size: 20px;
+}

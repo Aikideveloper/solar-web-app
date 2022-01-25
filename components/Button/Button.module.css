@@ -1,0 +1,73 @@
+.Button {
+  font-size: 1rem;
+  border: 1.5px solid;
+  padding: .845rem 1.665rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.Button_block {
+  display: block;
+  width: 100%;
+}
+
+.Button_primary {
+  color: white;
+  background-color: #fbae00;
+  border-color: #fbae00;
+}
+
+.Button_secondary {
+  color: #fbae00;
+  background-color: white;
+  border-color: white;
+}
+
+.Button_danger {
+  color: white;
+  background-color: var(--c-cancel);
+  border-color: var(--c-cancel);
+}
+
+.Button_link {
+  color: #fbae00;
+  font-size: .875rem;
+  line-height: 1.43;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  text-align: left;
+}
+
+.Button_secondary.Button_outline {
+  color: white;
+  background-color: #fbae00;
+  border-color: white;
+}
+
+.Button_danger.Button_outline {
+  color: var(--c-cancel);
+}
+
+.Button_primary.Button_outline {
+  color: var(--c-secondary);
+}
+
+.Button_outline {
+  background-color: white;
+}
+
+.Button_small {
+  font-size: 0.75rem;
+  padding: 0.469rem 1.596rem;
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.Button_disabled {
+  pointer-events: none;
+}
