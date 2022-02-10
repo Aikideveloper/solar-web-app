@@ -1,12 +1,13 @@
 import React from 'react';
 import Button from '../Button/Button';
 import { useState } from 'react'
+import { Router, useRouter } from 'next/router';
 
 const Form = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
-  console.log(name, email)
+
   const handleSubmit = (e) => {
     console.log('entro')
     e.preventDefault()
@@ -30,7 +31,7 @@ const Form = () => {
           setSubmitted(true)
           setName('')
           setEmail('')
-          setBody('')
+          window.location.assign('/test')
         }
       })
     }
@@ -38,6 +39,7 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+
       <div className="form-group c-gray-2">
         <label>
           <i className="fas fa-user c-primary mr-3"></i>Nombre y apellidos

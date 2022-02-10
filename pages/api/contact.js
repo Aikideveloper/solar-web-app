@@ -22,7 +22,10 @@ export default function (req, res) {
   })
 
   transporter.sendMail(mailData)
-    .then(() => console.log('then'))
+    .then(() => {
+      console.log('email send!')
+      return res.status(200)
+    })
     .catch(err => console.log(err))
-
+  res.end()
 }
