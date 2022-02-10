@@ -3,7 +3,7 @@ import { asClassName } from '../../helpers/Helper';
 import Link from 'next/link';
 import styles from './Button.module.css';
 
-const Button = ({ type, outline, action, disabled, content, block, small }) => {
+const Button = ({ isSubmit, type, outline, action, disabled, content, block, small }) => {
   const className = asClassName(
     styles.Button,
     block && styles.Button_block,
@@ -16,7 +16,7 @@ const Button = ({ type, outline, action, disabled, content, block, small }) => {
   const props = { className, disabled }
 
   return typeof action !== 'string'
-    ? <button {...props} onClick={action}>{content}</button>
+    ? <button type={`${isSubmit ? 'submit' : ''}`} {...props} onClick={action}>{content}</button>
     : action.startsWith('/')
       ? <Link {...props} to={action}>{content}</Link>
       : <a {...props} href={action}>{content}</a>

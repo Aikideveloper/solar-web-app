@@ -1,0 +1,28 @@
+require('dotenv').config()
+const PASSWORD = process.env.PASSWORD;
+
+export default function (req, res) {
+  let nodemailer = require('nodemailer')
+
+  const mailData = {
+    "from": "solardelatorre@gmail.com",
+    "to": "solardelatorre@gmail.com",
+    "subject": "hola",
+    "html": req.body.email
+   }
+
+  const transporter = nodemailer.createTransport({
+    port: "465",
+    host: "smtp.gmail.com",
+    auth: {
+      user: 'solardelatorre@gmail.com',
+      pass: PASSWORD,
+    },
+    secure: true,
+  })
+
+  transporter.sendMail(mailData)
+    .then(() => console.log('then'))
+    .catch(err => console.log(err))
+
+}

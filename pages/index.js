@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Button from '../components/Button/Button';
+import Form from '../components/Form/Form';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -15,16 +16,16 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <div className="h-100">
-          <div className="row h-100">
+          <div className="mx-auto row h-100">
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column">
-              <h2 className={`${styles.title} pl-5`}>
+              <h1 className={`${styles.title} pl-5`}>
                 <span className={styles.autoconsume}>Autoconsumo </span>
                 <span className={styles.solar}>Solar</span>
-              </h2>
+              </h1>
 
-              <h2 className={`${styles.description} pl-5`}>
+              <p className={`${styles.description} pl-5`}>
                 Calcula, programa y ubica tu instalación.<br></br> Ahorra y optimiza cada día.
-              </h2>
+              </p>
             </div>
             <div
               className={`${styles.imageHeader} col-xl-6 col-md-6 col-sm-12`}
@@ -37,7 +38,7 @@ export default function Home() {
 
       <section className="container">
         <div className="h-100">
-          <div className={`${styles.section_1} row h-100 pt-5 pb-5`}>
+          <div className={`${styles.section_1} row h-100 pt-5`}>
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column">
               <h2 className={styles.section_1_title}>
               Calcula <span className='c-primary'><i className="fas fa-bolt"></i> </span> optimiza
@@ -48,8 +49,8 @@ export default function Home() {
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud.
               </p>
-              <div className="pt-3">
-              <Button type="primary" content="Contacta" ></Button>
+              <div className="pt-3 text-sm-center">
+                <Button type="primary" content="Contacta" ></Button>
               </div>
 
             </div>
@@ -62,6 +63,25 @@ export default function Home() {
                 className={`${styles.section_1_img} w-100`}
               ></Image>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-app-primary" id="contact-form">
+        <div className="mx-auto justify-content-center container p-5 mb-5">
+          <p className={`${styles.section_1_p} default-text c-dark`}>
+            «El principal problema con la energía solar en la superficie de
+          la Tierra es que es tan intermitente, y aún no tenemos un almacenamiento decente».
+          </p>
+          <h4 className="c-dark">
+            Stewart Brand.
+          </h4>
+        </div>
+      </section>
+      <section id="contact-form">
+        <div className="row mx-auto justify-content-center mb-5">
+          <div className="col-xs-16 col-md-5 col-xl-5">
+            <h2 className="mb-4">Contacto</h2>
+            <Form/>
           </div>
         </div>
       </section>

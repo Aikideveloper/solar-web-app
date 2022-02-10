@@ -1,6 +1,5 @@
 @import "flexBox.css";
 @import "spacing.css";
-@import "grid.css";
 
 html,
 body {
@@ -20,7 +19,7 @@ a {
 }
 
 .c-white {
-  color: white;
+  color: white !important;
 }
 
 .c-primary {
@@ -35,6 +34,29 @@ a {
   color: #9b9b9b !important;
 }
 
+.bg-app-white {
+  background-color: white;
+}
+
+.bg-app-primary {
+  background-color: #fbae00
+}
+
+.bg-app-gray-1 {
+  background-color: #c2c2c2 !important;
+}
+
+.bg-app-gray-2 {
+  background-color: #9b9b9b !important;
+}
+
 .default-text {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .text-sm-center {
+    text-align: center;
+  }
 }

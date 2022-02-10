@@ -118,6 +118,11 @@
     position: relative
   }
 
+  .contact {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
   #menu ul {
     background: #111;
     position: absolute;
