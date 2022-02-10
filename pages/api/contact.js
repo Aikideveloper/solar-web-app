@@ -8,12 +8,7 @@ export default function (req, res) {
     "from": "solardelatorre@gmail.com",
     "to": "solardelatorre@gmail.com",
     "subject": "SUBSCRIPCIÓN DE CONSUMO SOLAR",
-    "html": `
-      <div ">
-        Enhorabuena!${req.body.name}, quiere saber más Jamo!
-        Email -> ${req.body.email}
-      </div>
-    `
+    "html": req.body.email
    }
 
   const transporter = nodemailer.createTransport({
