@@ -10,7 +10,7 @@ export default function (req, res) {
     "subject": "SUBSCRIPCIÓN DE CONSUMO SOLAR",
     "html": `
       <div ">
-        Enhorabuena! <span style="color: red;">${req.body.name}</span>, quiere saber más Jamo!
+        Enhorabuena!${req.body.name}, quiere saber más Jamo!
         Email -> ${req.body.email}
       </div>
     `
