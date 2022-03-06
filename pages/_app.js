@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import FloatingWhatsApp from 'react-floating-whatsapp';
 import '../styles/globals.css';
+import Footer from '../components/Footer/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }) {
         statusMessage="Preguntanos!"
         chatMessage={`🔆 Hola! ¿Cómo podemos ayudarte?`}
       />
+      <Footer/>
     </div>
   )
 }

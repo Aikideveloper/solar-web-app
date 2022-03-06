@@ -9,7 +9,6 @@ const Form = () => {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
-    console.log('entro')
     e.preventDefault()
     let data = {
       name,
@@ -27,7 +26,6 @@ const Form = () => {
       }).then((res) => {
         console.log('Response received')
         if (res.status === 200) {
-          console.log('Response succeeded!')
           setSubmitted(true)
           setName('')
           setEmail('')
@@ -39,7 +37,6 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-
       <div className="form-group c-gray-2">
         <label>
           <i className="fas fa-user c-primary mr-3"></i>Nombre y apellidos

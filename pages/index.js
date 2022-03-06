@@ -18,14 +18,18 @@ export default function Home() {
         <div className="h-100">
           <div className="mx-auto row h-100">
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column">
-              <h1 className={`${styles.title} pl-5`}>
+              <h1 className={`${styles.title} pl-3`}>
                 <span className={styles.autoconsume}>Autoconsumo </span>
                 <span className={styles.solar}>Solar</span>
               </h1>
 
-              <p className={`${styles.description} pl-5`}>
+              <p className={`${styles.description} pl-3`}>
                 Calcula, programa y ubica tu instalación.<br></br> Ahorra y optimiza cada día.
               </p>
+              <div className="text-center">
+                <Button type="primary" content="Contacta" ></Button>
+              </div>
+
             </div>
             <div
               className={`${styles.imageHeader} col-xl-6 col-md-6 col-sm-12`}
@@ -41,7 +45,7 @@ export default function Home() {
           <div className={`${styles.section_1} row h-100 pt-5`}>
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column">
               <h2 className={styles.section_1_title}>
-              Calcula <span className='c-primary'><i className="fas fa-bolt"></i> </span> optimiza
+                Calcula <span className='c-primary'><i className="fas fa-bolt"></i> </span> optimiza
               </h2>
 
               <p className={`${styles.section_1_p} default-text c-gray-2`}>
@@ -70,18 +74,89 @@ export default function Home() {
         <div className="mx-auto justify-content-center container p-5 mb-5">
           <p className={`${styles.section_1_p} default-text c-dark`}>
             «El principal problema con la energía solar en la superficie de
-          la Tierra es que es tan intermitente, y aún no tenemos un almacenamiento decente».
+            la Tierra es que es tan intermitente, y aún no tenemos un almacenamiento decente».
           </p>
           <h4 className="c-dark">
             Stewart Brand.
           </h4>
         </div>
       </section>
+
+
+
+      <section>
+        <div className="container px-4 py-5" id="custom-cards">
+          <h2 className="pb-2 border-bottom">Custom cards</h2>
+
+          <div className="row align-items-stretch g-4 py-5">
+
+            <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
+              <div className={`${styles.card1} card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg`} >
+                <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                  <ul className="d-flex list-unstyled mt-auto">
+                    <li className="me-auto">
+                      <img src="" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white" />
+                    </li>
+                    <li className="d-flex align-items-center me-3">
+                      <small>Earth</small>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <small>3d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
+              <div className={`${styles.card2} card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg`}>
+                <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+                  <ul className="d-flex list-unstyled mt-auto">
+                    <li className="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white" />
+                    </li>
+                    <li className="d-flex align-items-center me-3">
+                      <small>Pakistan</small>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <small>4d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
+              <div className={`${styles.card3} card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg`} >
+                <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
+                  <ul className="d-flex list-unstyled mt-auto">
+                    <li className="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white" />
+                    </li>
+                    <li className="d-flex align-items-center me-3">
+                      <small>California</small>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <small>5d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       <section id="contact-form">
         <div className="row mx-auto justify-content-center mb-5">
           <div className="col-xs-16 col-md-5 col-xl-5">
             <h2 className="mb-4">Contacto</h2>
-            <Form/>
+            <div className='container'>
+              <Form />
+            </div>
           </div>
         </div>
       </section>

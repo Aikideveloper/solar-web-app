@@ -54,9 +54,42 @@ a {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+#leftHalf {
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+}
 
+#rightHalf {
+  margin-top: -48px;
+  background: url('./../public/img/solar_panel.jpeg');
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
   .text-sm-center {
     text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #rightHalf {
+    z-index: -1;
+    width: 100%;
+    opacity: 0.5;
+  }
+  #leftHalf {
+    margin-top: -48px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
   }
 }

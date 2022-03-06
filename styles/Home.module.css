@@ -7,6 +7,16 @@
   justify-content: center;
 }
 
+.card1 {
+  background-image: url('./../public/img/intro_mobile.jpg');
+}
+.card2 {
+  background-image: url('./../public/img/solar_panel.jpeg');
+}
+.card3 {
+  background-image: url('./../public/img/sun_care.png');
+}
+
 .title {
   margin: 0;
   line-height: 1;
@@ -82,20 +92,21 @@
 @media only screen and (max-width: 600px) {
 
   .title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .description {
     color: white;
-    margin: 1rem 0;
     line-height: 1.25;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 200;
   }
 
   .main {
-    height: 300px;
-    background: #131313;
+    height: 100vh;
+    background-image: url('./../public/img/intro_mobile.jpg');
+    background-position: center;
+    background-size: cover;
     flex: 1;
     display: flex;
     flex-direction: column;

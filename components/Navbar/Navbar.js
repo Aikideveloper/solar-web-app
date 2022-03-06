@@ -15,7 +15,7 @@ const Navbar = () => {
       <ul>
         <li onClick={closeMenu}><Link href='/'>Home</Link></li>
         <li onClick={closeMenu}><Link href='/about'>About</Link></li>
-        <li onClick={closeMenu}><Link href='/about'>Contact Us</Link></li>
+        <li onClick={closeMenu}><Link href='/contact'>Contact Us</Link></li>
       </ul>
       <div id={styles.buttonContact} className={`${styles.contact} px-4`}>
       <li className={`${styles.contact}`} onClick={closeMenu}><Link href='/'>Contacto</Link></li>
