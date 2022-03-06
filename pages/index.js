@@ -17,16 +17,16 @@ export default function Home() {
       <main className={`${styles.main}`}>
         <div className="h-100">
           <div className="mx-auto row h-100">
-            <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column">
-              <h1 className={`${styles.title} pl-3`}>
+            <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center text-align-center flex-column">
+              <h1 className={`${styles.title} pl-3 text-center`}>
                 <span className={styles.autoconsume}>Autoconsumo </span>
                 <span className={styles.solar}>Solar</span>
               </h1>
 
-              <p className={`${styles.description} pl-3`}>
+              <p className={`${styles.description} pl-3 text-center`}>
                 Calcula, programa y ubica tu instalación.<br></br> Ahorra y optimiza cada día.
               </p>
-              <div className="text-center">
+              <div className="text-center mt-3">
                 <Button type="primary" content="Contacta" ></Button>
               </div>
 
