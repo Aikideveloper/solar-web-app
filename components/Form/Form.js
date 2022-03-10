@@ -12,6 +12,7 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log('entorno', process.env.PASSWORD)
     let data = {
       name,
       email,

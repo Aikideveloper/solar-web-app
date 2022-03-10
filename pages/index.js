@@ -2,11 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Button from '../components/Button/Button';
 import Form from '../components/Form/Form';
-import styles from '../styles/Home.module.css'; 
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
-
-  console.log('entorno', process.env.PASSWORD)
   return (
     <div className={styles.container}>
       <Head>
