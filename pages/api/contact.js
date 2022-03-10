@@ -69,13 +69,13 @@ const mailData = {
                   }
               });
             });
+            res.status(200).json({ status: "OK" });
             res.end()
 
             resolve(info);
         }
     });
   });
-  res.status(200).json({ status: "OK" });
   res.end()
 
 
