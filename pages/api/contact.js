@@ -3,7 +3,7 @@ const PASSWORD = process.env.PASSWORD;
 
 export default async (req, res) => {
   let nodemailer = require('nodemailer')
-
+  console.log('password', PASSWORD )
   const transporter = nodemailer.createTransport({
     port: "465",
     host: "smtp.gmail.com",
