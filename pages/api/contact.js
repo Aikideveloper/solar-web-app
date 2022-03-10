@@ -55,6 +55,7 @@ const mailData = {
  }
 
   await new Promise((resolve, reject) => {
+    console.log('password', PASSWORD)
     transporter.sendMail(mailData, async(err, info) => {
         if (err) {
             console.error(err);
