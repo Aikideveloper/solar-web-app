@@ -3,9 +3,8 @@ import Image from 'next/image';
 import Button from '../components/Button/Button';
 import Form from '../components/Form/Form';
 import styles from '../styles/Home.module.css';
-require('dotenv').config()
 
-export default function Home() {x
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
