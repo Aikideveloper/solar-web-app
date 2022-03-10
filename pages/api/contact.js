@@ -39,9 +39,9 @@ const mailData = {
   "to": "solardelatorre@gmail.com",
   "subject": `SOLICITUD DE PRESUPUESTO WEB - ${req.body.province} - ${formatDate(new Date)}`,
   "html": `
-    nombre: ${req.body.name} <br>
-    email: ${req.body.email} <br>
-    teléfono: ${req.body.phone} <br>
+    nombre: ${req.body.name}<br>
+    email: ${req.body.email}<br>
+    teléfono: ${req.body.phone}<br>
     `
  }
 
