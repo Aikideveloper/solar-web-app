@@ -53,12 +53,24 @@ const mailData = {
  }
 
   await new Promise((resolve, reject) => {
-    transporter.sendMail(mailData, (err, info) => {
+    transporter.sendMail(mailData, async(err, info) => {
         if (err) {
             console.error(err);
             reject(err);
         } else {
-            console.log(info);
+            await new Promise((resolve, reject) => {
+              transporter.sendMail(mailUserData, (err, info) => {
+                  if (err) {
+                      console.error(err);
+                      reject(err);
+                  } else {
+                      console.log(info);
+                      resolve(info);
+                  }
+              });
+            });
+            res.end()
+
             resolve(info);
         }
     });
@@ -66,17 +78,5 @@ const mailData = {
   res.status(200).json({ status: "OK" });
   res.end()
 
-  await new Promise((resolve, reject) => {
-    transporter.sendMail(mailUserData, (err, info) => {
-        if (err) {
-            console.error(err);
-            reject(err);
-        } else {
-            console.log(info);
-            resolve(info);
-        }
-    });
-  });
-  res.status(200).json({ status: "OK" });
-  res.end()
+
 }
