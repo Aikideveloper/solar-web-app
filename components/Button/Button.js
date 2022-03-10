@@ -3,7 +3,7 @@ import { asClassName } from '../../helpers/Helper';
 import Link from 'next/link';
 import styles from './Button.module.css';
 
-const Button = ({ isSubmit, type, outline, action, disabled, content, block, small }) => {
+const Button = ({ isSubmit, type, outline, action, disabled, content, block, small,}) => {
   const className = asClassName(
     styles.Button,
     block && styles.Button_block,
@@ -18,8 +18,13 @@ const Button = ({ isSubmit, type, outline, action, disabled, content, block, sma
   return typeof action !== 'string'
     ? <button type={`${isSubmit ? 'submit' : ''}`} {...props} onClick={action}>{content}</button>
     : action.startsWith('/')
-      ? <Link {...props} to={action}>{content}</Link>
-      : <a {...props} href={action}>{content}</a>
+      ? <Link {...props}></Link>
+      : <a {...props} href={action}>
+           <div>
+          <i className="fab fa-google-play mr-2"></i>
+          {content}
+        </div>
+      </a>
 }
 
 export default Button;

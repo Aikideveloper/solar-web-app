@@ -11,7 +11,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 * {
@@ -26,8 +26,16 @@ a {
   color: #fbae00
 }
 
+.c-title {
+  color: #5a5a5a;
+}
+
 .c-gray-1 {
   color: #c2c2c2 !important;
+}
+
+.c-dark-1 {
+  color: #2b2b2b !important;
 }
 
 .c-gray-2 {
@@ -36,6 +44,10 @@ a {
 
 .bg-app-white {
   background-color: white;
+}
+
+.border-app {
+  border-color: #fbae00 !important;
 }
 
 .bg-app-primary {
@@ -52,6 +64,11 @@ a {
 
 .default-text {
   font-size: 20px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 
 #leftHalf {

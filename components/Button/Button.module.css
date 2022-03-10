@@ -6,6 +6,7 @@
   text-align: center;
   display: inline-block;
   font-weight: 500;
+  text-decoration: none !important;
 }
 
 .Button_block {
@@ -17,6 +18,11 @@
   color: white;
   background-color: #fbae00;
   border-color: #fbae00;
+}
+
+.Button_primary:hover {
+  color: white;
+  background-color: #d69600;
 }
 
 .Button_secondary {
@@ -52,11 +58,15 @@
 }
 
 .Button_primary.Button_outline {
-  color: var(--c-secondary);
+  color: white;
+  background-color: transparent;
+  border: 1px solid #fbae00;
 }
 
-.Button_outline {
-  background-color: white;
+.Button_primary.Button_outline:hover {
+  color: #fbae00;
+  background-color: transparent;
+  border: 1px solid #fbae00;
 }
 
 .Button_small {

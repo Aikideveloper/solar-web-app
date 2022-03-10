@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import Button from '../components/Button/Button';
+import styles from '../components/Button/Button.module.css';
 
 const about = () => {
 
@@ -9,14 +11,24 @@ const about = () => {
       <div className="jumbotron jumbotron-fluid mb-0">
         <div className="container p-4">
           <div className="row justify-content-center text-center">
-            <div className="col-md-10 col-lg-6">
-              <h1 className="display-5">Conóce nuestro <span className='c-primary'>proyecto</span></h1>
-              <p className="lead">Where you choose to work has impact on your productivity and creativity. It also says a lot about your business. We are the right office space.</p>
-              <p className="lead">
-                <Button type="primary" content="Contacta" ></Button>
-              </p>
+            <div className="col-md-10 col-lg-12">
+              <h1 className="display-5">Calcula tu propia <i className="fas fa-bolt c-primary"></i> instalación sostenible</h1>
+              <div className="row">
+              <p className="lead col-lg-6 mx-auto">Where you choose to work has impact on your productivity and creativity. It also says a lot about your business. We are the right office space.</p>
+              </div>
             </div>
           </div>
+          <div className="lead row justify-content-center">
+                <div className="col-lg-4 col-xl-3 col-xs-12 text-center mt-3">
+                  {/* <Button type="primary" content="Solicita tu presupuesto"></Button> */}
+                 <Link href='/contact'>
+                 <a  className={`${styles.Button} ${styles.Button_primary}`} >Solicita tu presupuesto</a>
+                 </Link>
+                </div>
+                <div className="col-lg-4 col-xl-3 col-xs-12 text-center mt-3">
+                  <Button action="https://play.google.com/store/apps/details?id=es.autoconsumo.solar.calculo.fotovoltaica&gl=ES" type="primary" content="Descarga la aplicación" outline></Button>
+                </div>
+              </div>
         </div>
       </div>
       <section id="sec-features" className="sec-features pt-5 pb-5">

@@ -7,16 +7,6 @@
   justify-content: center;
 }
 
-.card1 {
-  background-image: url('./../public/img/intro_mobile.jpg');
-}
-.card2 {
-  background-image: url('./../public/img/solar_panel.jpeg');
-}
-.card3 {
-  background-image: url('./../public/img/sun_care.png');
-}
-
 .title {
   margin: 0;
   line-height: 1;

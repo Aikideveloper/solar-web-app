@@ -26,16 +26,48 @@ export default async (req, res) => {
     });
 });
 
+const formatDate = date => {
+    return [date.getMonth()+1,
+               date.getDate(),
+               date.getFullYear()].join('/')+' '+
+              [date.getHours(),
+                date.getMinutes(),
+                date.getSeconds()].join(':');
+}
 const mailData = {
   "from": "solardelatorre@gmail.com",
   "to": "solardelatorre@gmail.com",
-  "subject": "SUBSCRIPCIÓN DE CONSUMO SOLAR",
-  "html": `${req.body.email}`
+  "subject": `SOLICITUD DE PRESUPUESTO WEB - ${req.body.province} - ${formatDate(new Date)}`,
+  "html": `
+    nombre: ${req.body.name} <br>
+    email: ${req.body.email} <br>
+    teléfono: ${req.body.phone} <br>
+    `
  }
 
+ const mailUserData = {
+  "from": "solardelatorre@gmail.com",
+  "to": `${req.body.email}`,
+  "subject": `SOLICITUD DE PRESUPUESTO WEB`,
+  "html": `Tu solicitud de presupuesto ha sido enviado, nos pondremos en contacto contigo lo antes posible`
+ }
 
   await new Promise((resolve, reject) => {
     transporter.sendMail(mailData, (err, info) => {
+        if (err) {
+            console.error(err);
+            reject(err);
+        } else {
+            console.log(info);
+            resolve(info);
+        }
+    });
+  });
+  res.status(200).json({ status: "OK" });
+  res.end()
+
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailUserData, (err, info) => {
         if (err) {
             console.error(err);
             reject(err);
