@@ -1,15 +1,15 @@
 require('dotenv').config()
 
 const PASSWORD = process.env.PASSWORD;
-console.log('password', PASSWORD)
+
 export default async (req, res) => {
   let nodemailer = require('nodemailer')
-  console.log('password', PASSWORD)
+
   const transporter = nodemailer.createTransport({
     port: "465",
     host: "smtp.gmail.com",
     auth: {
-      user: 'autoconsumosolarmarketing@gmail.com',
+      user: 'solardelatorre@gmail.com',
       pass: PASSWORD,
     },
     secure: true,
@@ -37,8 +37,8 @@ const formatDate = date => {
 }
 
 const mailData = {
-  "from": "autoconsumosolarmarketing@gmail.com",
-  "to": "autoconsumosolarmarketing@gmail.com",
+  "from": "solardelatorre@gmail.com",
+  "to": "solardelatorre@gmail.com",
   "subject": `SOLICITUD DE PRESUPUESTO WEB - ${req.body.province} - ${formatDate(new Date)}`,
   "html": `
     nombre: ${req.body.name}<br>
@@ -48,7 +48,7 @@ const mailData = {
  }
 
  const mailUserData = {
-  "from": "autoconsumosolarmarketing@gmail.com",
+  "from": "solardelatorre@gmail.com",
   "to": `${req.body.email}`,
   "subject": `SOLICITUD DE PRESUPUESTO WEB`,
   "html": `Tu solicitud de presupuesto ha sido enviado, nos pondremos en contacto contigo lo antes posible`

@@ -5,6 +5,7 @@ import '../styles/globals.css';
 import Footer from '../components/Footer/Footer';
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <div id="MyApp">
       <Head>
