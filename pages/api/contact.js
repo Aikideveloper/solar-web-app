@@ -9,7 +9,7 @@ export default async (req, res) => {
     port: "465",
     host: "smtp.gmail.com",
     auth: {
-      user: 'solardelatorre@gmail.com',
+      user: 'autoconsumosolarmarketing@gmail.com',
       pass: PASSWORD,
     },
     secure: true,
@@ -37,8 +37,8 @@ const formatDate = date => {
 }
 
 const mailData = {
-  "from": "solardelatorre@gmail.com",
-  "to": "solardelatorre@gmail.com",
+  "from": "autoconsumosolarmarketing@gmail.com",
+  "to": "autoconsumosolarmarketing@gmail.com",
   "subject": `SOLICITUD DE PRESUPUESTO WEB - ${req.body.province} - ${formatDate(new Date)}`,
   "html": `
     nombre: ${req.body.name}<br>
@@ -48,14 +48,13 @@ const mailData = {
  }
 
  const mailUserData = {
-  "from": "solardelatorre@gmail.com",
+  "from": "autoconsumosolarmarketing@gmail.com",
   "to": `${req.body.email}`,
   "subject": `SOLICITUD DE PRESUPUESTO WEB`,
   "html": `Tu solicitud de presupuesto ha sido enviado, nos pondremos en contacto contigo lo antes posible`
  }
 
   await new Promise((resolve, reject) => {
-    console.log('password', PASSWORD)
     transporter.sendMail(mailData, async(err, info) => {
         if (err) {
             console.error(err);
