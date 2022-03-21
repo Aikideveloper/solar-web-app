@@ -19,10 +19,10 @@ const Footer = () => {
             <div className="col-md-12 mb-md-0 mb-3">
               <div className="d-flex align-items-center justify-content-center mt-3">
                 <div className="px-2">
-                  <i class="fab fa-facebook mr-1"></i> <Link href="#!">Facebook</Link>
+                  <i className="fab fa-facebook mr-1"></i> <Link href="#!">Facebook</Link>
                 </div>
                 <div className="px-2">
-                  <i class="fab fa-instagram mr-2"></i><Link href="#!">Instagram</Link>
+                  <i className="fab fa-instagram mr-2"></i><Link href="#!">Instagram</Link>
                 </div>
                 <div className="px-2">
                   <i className="fab fa-google-play mr-2"></i><Link href="#!">Play store</Link>
