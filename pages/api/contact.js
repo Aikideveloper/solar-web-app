@@ -31,7 +31,7 @@ const formatDate = date => {
     return [date.getMonth()+1,
                date.getDate(),
                date.getFullYear()].join('/')+' '+
-              [date.getHours(),
+              [date.getHours() + 1,
                 date.getMinutes(),
                 date.getSeconds()].join(':');
 }

@@ -3,6 +3,9 @@ import Image from 'next/image';
 import Button from '../components/Button/Button';
 import Form from '../components/Form/Form';
 import styles from '../styles/Home.module.css';
+import buttonStyles from '../components/Button/Button.module.css';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -23,10 +26,12 @@ export default function Home() {
               </h1>
 
               <p className={`${styles.description} pl-3 text-center`}>
-                Calcula, programa y ubica tu instalación.<br></br> Ahorra y optimiza cada día.
+                Súmate al cambio y empieza a ahorrar en <br></br> la factura de la luz con la energía solar.
               </p>
               <div className="text-center mt-3">
-                <Button type="primary" content="Contacta" ></Button>
+                <Link href='/contact'>
+                  <a  className={`${buttonStyles.Button} ${buttonStyles.Button_primary}`} >Solicita tu presupuesto</a>
+                </Link>
               </div>
 
             </div>
@@ -43,17 +48,15 @@ export default function Home() {
         <div className="h-100">
           <div className={`${styles.section_1} row h-100 pt-5`}>
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column">
-              <h2 className={styles.section_1_title}>
-                Calcula <span className='c-primary'><i className="fas fa-bolt"></i> </span> optimiza
-              </h2>
+              <h2 className="c-title pb-2 border-bottom border-app">Aprovecha <b>las subenciones</b></h2>
 
               <p className={`${styles.section_1_p} default-text c-gray-2`}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud.
+                Haz el cambio al autoconsumo y consigue un 50% de ahorro en la instalación de tus paneles y baterías. No te preocupes, te lo gestionamos todo.
               </p>
               <div className="pt-3 text-sm-center">
-                <Button type="primary" content="Contacta" ></Button>
+                <Link href='/contact'>
+                  <a  className={`${buttonStyles.Button} ${buttonStyles.Button_primary}`} >Solicita tu presupuesto</a>
+                </Link>
               </div>
 
             </div>
@@ -71,12 +74,8 @@ export default function Home() {
       </section>
       <section className="bg-app-primary" id="contact-form">
         <div className="mx-auto justify-content-center container p-5 mb-5">
-          <p className={`${styles.section_1_p} default-text c-dark`}>
-            «El principal problema con la energía solar en la superficie de
-            la Tierra es que es tan intermitente, y aún no tenemos un almacenamiento decente».
-          </p>
-          <h4 className="c-dark">
-            Stewart Brand.
+          <h4 className="c-dark text-center">
+            «La radiación solar en España es un privilegio que debemos aprovechar»
           </h4>
         </div>
       </section>
@@ -84,8 +83,8 @@ export default function Home() {
 
 
       <section>
-        <div className="container px-4 py-5" id="custom-cards">
-          <h1 className="c-title pb-2 border-bottom border-app">Nuestra <b>filosofía</b></h1>
+        <div className="container px-4 py-2 mb-1" id="custom-cards">
+          <h2 className="c-title pb-2 border-bottom border-app">Genera tu propia <b>energía renovable</b></h2>
 
           <div className="row align-items-stretch g-4 py-5">
 
@@ -100,8 +99,8 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="text-center">
-                <h4 className="c-title">Energía a tope</h4>
-                <p className="c-gray-2">El principal <b className="c-dark-1">problema</b> con la energía solar en la superficie de la Tierra es que es tan intermitente.</p>
+                <h4 className="c-title">Solución integral</h4>
+                <p className="c-gray-2">Nos encargamos de todo. Desde el estudio previo hasta la instalación completa. Te asesoramos durante todo el proceso.</p>
               </div>
             </div>
 
@@ -116,8 +115,8 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="text-center">
-                <h4 className="c-title">Energía a tope</h4>
-                <p className="c-gray-2">El principal problema con la energía solar en la superficie de la Tierra es que es tan intermitente.</p>
+                <h4 className="c-title">Maximiza el ahorro</h4>
+                <p className="c-gray-2">Reduce tu factura de la luz desde el primer día y recibe una compensación por la energía que no consumas</p>
               </div>
             </div>
 
@@ -132,8 +131,8 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="text-center">
-                <h4 className="c-title">Energía a tope</h4>
-                <p className="c-gray-2">El principal problema con la energía solar en la superficie de la Tierra es que es tan intermitente.</p>
+                <h4 className="c-title">Energía verde</h4>
+                <p className="c-gray-2">Consume tu propia energía renovable y protege al medio ambiente</p>
               </div>
             </div>
 
@@ -142,10 +141,10 @@ export default function Home() {
       </section>
 
 
-      <section id="contact-form">
-        <div className="row mx-auto justify-content-center mb-5">
-          <div className="col-xs-16 col-md-5 col-xl-5">
-            <h2 className="mb-4">Contacto</h2>
+      <section id="contact-form" className="container">
+        <h2 className="c-title pb-2 border-bottom border-app">Solicita <b>tu presupuesto</b> sin compromiso</h2>
+        <div className="row mx-auto justify-content-center mb-5 ">
+          <div className="col-xs-12 col-md-6 col-xl-6 mt-5">
             <div className='container'>
               <Form />
             </div>

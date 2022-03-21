@@ -22,7 +22,7 @@ const about = () => {
                 <div className="col-lg-4 col-xl-3 col-xs-12 text-center mt-3">
                   {/* <Button type="primary" content="Solicita tu presupuesto"></Button> */}
                  <Link href='/contact'>
-                 <a  className={`${styles.Button} ${styles.Button_primary}`} >Solicita tu presupuesto</a>
+                  <a className={`${styles.Button} ${styles.Button_primary}`} >Solicita tu presupuesto</a>
                  </Link>
                 </div>
                 <div className="col-lg-4 col-xl-3 col-xs-12 text-center mt-3">

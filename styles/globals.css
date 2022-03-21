@@ -108,9 +108,29 @@ a {
   background: rgba(0, 0, 0, .75);
 }
 
+.contact-mobile {
+  display: none;
+}
+
+.contact-overlay {
+  background-color: rgba(41, 41, 41, 0.792);
+}
+
 @media only screen and (max-width: 600px) {
   .text-sm-center {
     text-align: center;
+  }
+
+  .contact-desktop {
+    display: none !important;
+  }
+
+  .contact-mobile {
+    background: url('./../public/img/solar_panel.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
   }
 }
 

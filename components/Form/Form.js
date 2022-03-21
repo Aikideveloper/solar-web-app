@@ -2,16 +2,23 @@ import React from 'react';
 import Button from '../Button/Button';
 import { useState } from 'react'
 import { Router, useRouter } from 'next/router';
+import Link from 'next/link';
 
 const Form = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [province, setProvince] = useState('')
   const [phone, setPhone] = useState('')
+  const [lgpd, setLgpd] = useState(false)
+  const [fillCheckbox, setFillCheckbox] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    if (!lgpd) {
+      setFillCheckbox(true)
+    }
 
     let data = {
       name,
@@ -20,7 +27,7 @@ const Form = () => {
       province
     }
 
-    if (name && email && phone && province) {
+    if (name && email && phone && province && lgpd) {
       fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -91,11 +98,29 @@ const Form = () => {
           placeholder="Provincia"
         />
       </div>
+      <div className="form-group c-gray-2">
+
+        <input
+          onChange={(e) => {
+            setLgpd(e.target.checked)
+            setFillCheckbox(false)
+          }}
+          type="checkbox"
+          placeholder="Provincia"
+        />
+        <span className="ml-1 small" style={{ lineHeight: "0.5rem"}}>
+          <Link href="/lgpd"><a className="text-primary">He leído y acepto los términos y condiciones</a></Link> de nuestra Política de privacidad
+          para el tratamiento y cesión de sus datos personales a terceros acorde con la LOPD
+          y la Agencia Española de Protección de Datos. Tratamos la información que nos facilita
+          con el fin de ofrecerle la propuesta a través de email o de una llamada telefónica
+        </span>
+        {fillCheckbox && <p className="feedback text-danger mt-2">*Debes aceptar nuestra política de privacidad </p>}
+      </div>
       <div className="mt-4">
         <Button
           isSubmit
           type="primary"
-          content="Enviar solicitud de presupuesto"
+          content="Enviar solicitud"
         ></Button>
       </div>
     </form>
