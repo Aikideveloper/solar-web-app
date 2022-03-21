@@ -40,7 +40,7 @@ const Form = () => {
           setSubmitted(true)
           setName('')
           setEmail('')
-          window.location.assign('/test')
+          window.location.assign('/')
         }
       })
     } else {

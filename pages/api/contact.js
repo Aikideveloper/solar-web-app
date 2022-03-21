@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const PASSWORD = process.env.PASSWORD;
 
-export default async (req, res) => {
+const mainFn =  async (req, res) => {
   let nodemailer = require('nodemailer')
 
   const transporter = nodemailer.createTransport({
@@ -82,3 +82,5 @@ const mailData = {
 
 
 }
+
+export default mainFn
