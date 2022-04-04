@@ -134,6 +134,21 @@ a {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .xs-reverse-row {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+  .xs-reverse-row div p {
+    text-align: left;
+  }
+
+  .xs-reverse-row div h2 {
+    text-align: left;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   #AboutPage {

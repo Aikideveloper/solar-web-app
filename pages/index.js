@@ -26,7 +26,7 @@ export default function Home() {
               </h1>
 
               <p className={`${styles.description} pl-3 text-center`}>
-                Súmate al cambio y empieza a ahorrar en <br></br> la factura de la luz con la energía solar.
+                Súmate al cambio y empieza  <br></br> a ahorrar en la factura de la luz.
               </p>
               <div className="text-center mt-3">
                 <Link href='/contact'>
@@ -48,10 +48,10 @@ export default function Home() {
         <div className="h-100">
           <div className={`${styles.section_1} row h-100 pt-5`}>
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column">
-              <h2 className="c-title pb-2 border-bottom border-app">Aprovecha <b>las subenciones</b></h2>
+              <h2 className="c-title pb-2 border-bottom border-app">Aprovecha <b>las subvenciones</b></h2>
 
               <p className={`${styles.section_1_p} default-text c-gray-2`}>
-                Haz el cambio al autoconsumo y consigue un 50% de ahorro en la instalación de tus paneles y baterías. No te preocupes, te lo gestionamos todo.
+                Haz el cambio al autoconsumo y consigue un <b>50% de ahorro</b> en la instalación de tus paneles y baterías. No te preocupes, te lo gestionamos todo.
               </p>
               <div className="pt-3 text-sm-center">
                 <Link href='/contact'>

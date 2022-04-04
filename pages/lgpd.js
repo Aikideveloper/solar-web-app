@@ -25,8 +25,7 @@ const about = () => {
           De conformidad con el Reglamento (UE) 2016/679, del Parlamento Europeo
           y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento
           de datos personales y a la libre circulación de estos datos (Reglamento General de Protección de Datos - RGPD), Juan Manuel Sánchez Martínez,
-          informa a los usuarios de la aplicación: Autoconsumo Solar - Cálculo paneles solares ESP/MX (en adelante, la Aplicación),
-          acerca del tratamiento de los datos personales, que ellos voluntariamente hayan facilitado durante el
+          informa a los usuarios de la web (en adelante, la Web), acerca del tratamiento de los datos personales, que ellos voluntariamente hayan facilitado durante el
           proceso de registro, acceso y utilización del servicio.
 
 
@@ -35,13 +34,13 @@ const about = () => {
 
           Juan Manuel Sánchez Martínez, con CIF/NIF nº: 05332683H y domicilio a efectos de notificaciones en: C/ Játiva, 17, 2ºA, C.P. 28007
           - Madrid (Madrid) (en adelante, el Responsable del Tratamiento), es la entidad responsable del tratamiento de los datos facilitados
-          por los clientes de la Aplicación (en adelante, el/los Usuario/s)
+          por los clientes de la Web (en adelante, el/los Usuario/s)
 
 
           <br></br><br></br><b className="c-dark-1">2. FINALIDAD DEL TRATAMIENTO DE DATOS</b><br></br><br></br>
 
 
-          Para proceder al registro, acceso, servicios de asesoramiento y posterior uso de la Aplicación, el Usuario deberá facilitar
+          Para proceder al registro, acceso, servicios de asesoramiento y posterior uso de la Web, el Usuario deberá facilitar
           -de forma voluntaria-, datos de carácter personal (esencialmente, identificativos, de contacto y datos de consumo), los cuales serán
           incorporados a soportes automatizados titularidad del Responsable del Tratamiento.
 
@@ -53,26 +52,22 @@ const about = () => {
 
           La recogida, almacenamiento, modificación,
           estructuración y en su caso, eliminación, de los datos proporcionados por los Usuarios, constituirán operaciones de tratamiento llevadas
-          a cabo por el Responsable, con la finalidad de garantizar el correcto funcionamiento de la Aplicación, mantener la relación
+          a cabo por el Responsable, con la finalidad de garantizar el correcto funcionamiento de la Web, mantener la relación
           de prestación de servicios y/o comercial con el Usuario, y para la gestión, administración, información, prestación y mejora del servicio.
 
 
           Los datos personales facilitados por el Usuario -especialmente, el correo electrónico o e-mail y el número de teléfono- podrán emplearse
           también para remitir boletines (newsletters), así como comunicaciones comerciales de promociones y/o publicidad de la
-          Aplicación, siempre y cuando, el Usuario haya prestado previamente su consentimiento expreso para la recepción de
+          Web, siempre y cuando, el Usuario haya prestado previamente su consentimiento expreso para la recepción de
           estas comunicaciones vía electrónica o teléfonica.
 
-          La Aplicación utiliza servicios de terceros que pueden recopilar información utilizada
+          La Web utiliza servicios de terceros que pueden recopilar información utilizada
           para identificarlo.
 
-          Enlace a la política de privacidad de los proveedores de servicios externos utilizados por la aplicación:
+          Enlace a la política de privacidad de los proveedores de servicios externos utilizados por la web:
 
 
           <ul className='mt-3'>
-            <li><a href="https://www.google.com/policies/privacy" className="text-primary">Google Play Services</a></li>
-
-            <li><a href="https://support.google.com/admob/answer/6128543?hl=en" className="text-primary">AdMob</a></li>
-
             <li><a href="https://firebase.google.com/policies/analytics" className="text-primary">Google Analytics for Firebase</a></li>
           </ul>
 
@@ -84,7 +79,7 @@ const about = () => {
           El tratamiento de los datos del Usuario, se realiza con las siguientes bases jurídicas que legitiman el mismo:
 
           • La solicitud de información
-          y/o la contratación de los servicios de la Aplicación, cuyos términos y condiciones se pondrán a disposición del Usuario en todo caso, con
+          y/o la contratación de los servicios de la Web, cuyos términos y condiciones se pondrán a disposición del Usuario en todo caso, con
           carácter previo, para su expresa aceptación.
 
           • El consentimiento libre, específico, informado e inequívoco del Usuario, poniendo
@@ -92,14 +87,14 @@ const about = () => {
           afirmativa, como el marcado de una casilla dispuesta al efecto.
 
           En caso de que el Usuario no facilite al Responsable del Tratamiento
-          sus datos, o lo haga de forma errónea o incompleta, no será posible proceder al uso de la Aplicación.
+          sus datos, o lo haga de forma errónea o incompleta, no será posible proceder al uso de la Web.
 
 
 
           <br></br><br></br><b className="c-dark-1">4. CONSERVACIÓN DE LOS DATOS PERSONALES</b><br></br><br></br>
 
           Los datos personales proporcionados por el Usuario, se conservarán
-          en los sistemas y bases de datos del Responsable del Tratamiento, mientras aquél continúe haciendo uso de la Aplicación,
+          en los sistemas y bases de datos del Responsable del Tratamiento, mientras aquél continúe haciendo uso de la Web,
           y siempre que no solicite su supresión.
 
           Con el objetivo de depurar las posibles responsabilidades derivadas del tratamiento,
@@ -148,7 +143,7 @@ const about = () => {
           suprimidos y/o modificados durante el periodo de tiempo transcurrido desde la última copia de seguridad.
 
           Los servicios facilitados
-          o prestados a través de la Aplicación, excepto los servicios específicos de backup, no incluyen la reposición de los contenidos conservados
+          o prestados a través de la Web, excepto los servicios específicos de backup, no incluyen la reposición de los contenidos conservados
           en las copias de seguridad realizadas por el Responsable del Tratamiento, cuando esta pérdida sea imputable al usuario; en este caso,
           se determinará una tarifa acorde a la complejidad y volumen de la recuperación, siempre previa aceptación del usuario.
           La reposición de datos borrados sólo está incluida en el precio del servicio cuando la pérdida del contenido sea debida a
@@ -194,24 +189,22 @@ const about = () => {
           <br></br><br></br><b className="c-dark-1">1. TITULARIDAD</b><br></br><br></br>
 
           El presente documento tiene por objeto establecer las condiciones generales de uso de la
-          aplicación Autoconsumo Solar - Cálculo paneles solares ESP/MX(en adelante, la Aplicación), titularidad de Juan Manuel Sánchez Martínez,
-          con CIF/NIF nº: 05332683H y domicilio a efectos de notificaciones en: C/ Játiva, 17, 2ºA, C.P. 28007 - Madrid (Madrid)
+          web (en adelante, la Web), titularidad de Juan Manuel Sánchez Martínez, con CIF/NIF nº: 05332683H y domicilio a efectos de notificaciones en: C/ Játiva, 17, 2ºA, C.P. 28007 - Madrid (Madrid)
           (en adelante, el Propietario).
 
-          El registro y posterior uso de la Aplicación, requiere la aceptación previa por parte del usuario,
+          El registro y posterior uso de la Web, requiere la aceptación previa por parte del usuario,
           de las condiciones generales de uso vigentes. El Propietario se reserva el derecho de modificar las presentes condiciones, en cualquier
           momento, si bien dichos cambios serán debidamente informados para el conocimiento por parte del usuario.
 
-          La descarga y uso de la aplicación,
-          atribuye la condición de usuario de la misma (en adelante, el Usuario) e implica la lectura, entendimiento y aceptación de todos los términos
+          El uso de la web, atribuye la condición de usuario de la misma (en adelante, el Usuario) e implica la lectura, entendimiento y aceptación de todos los términos
           y condiciones recogidos por el presente documento.
 
           No obstante, el Usuario deberá revisar periódicamente las publicaciones relativas
-          a los cambios efectuados en las condiciones de uso, y si aquél continúa utilizando la Aplicación, se entenderá que ello implica la
+          a los cambios efectuados en las condiciones de uso, y si aquél continúa utilizando la Web, se entenderá que ello implica la
           aceptación y asunción de dichos cambios.
 
           Las presentes condiciones de uso, afectan a tus derechos y obligaciones legales respecto
-          al uso de la Aplicación. Si no aceptas los términos incluidos en las mismas, no debes registrarte, acceder, ni utilizar la Aplicación.
+          al uso de la Web. Si no aceptas los términos incluidos en las mismas, no debes registrarte, acceder, ni utilizar la Web.
 
 
 
@@ -219,107 +212,107 @@ const about = () => {
 
           De conformidad con las disposiciones vigentes en materia de protección de datos personales,
           y en aras a proteger la privacidad de los menores de edad, se informa de que el Usuario debe ser mayor de catorce (14) años
-          o disponer de autorización expresa de sus padres y/o tutores legales, para poder registrarse, acceder y utilizar la presente Aplicación.
+          o disponer de autorización expresa de sus padres y/o tutores legales, para poder registrarse, acceder y utilizar la presente Web.
 
 
           A tal fin, el Propietario podrá ponerse en contacto con el Usuario en cualquier momento para que acredite su identidad y la edad real
-          que le habilitaría para el uso de la Aplicación, o bien para que demuestre disponer de autorización de sus padres y/o tutores legales.
+          que le habilitaría para el uso de la Web, o bien para que demuestre disponer de autorización de sus padres y/o tutores legales.
 
 
           Entre los documentos que el Propietario podrá solicitar al Usuario para acreditar los puntos anteriormente señalados, se encontrarían
           una copia de su DNI, así como otros documentos complementarios que sean necesarios para que el Propietario verifique la edad real del Usuario.
           En caso de que el Propietario solicite la citada documentación al Usuario, y éste se niegue a aportarla, el Propietario podrá dar de baja
-          de la Aplicación al Usuario.
+          de la Web al Usuario.
 
 
           <br></br><br></br><b className="c-dark-1">3. DERECHOS DE PROPIEDAD INTELECTUAL</b><br></br><br></br>
 
-          La Aplicación es una obra compuesta de diversos elementos
+          La Web es una obra compuesta de diversos elementos
           integrados e inseparables (texto, ilustraciones, fotografías, imágenes animadas, vídeos, programas de ordenador, etc.),
           cuyos derechos de propiedad intelectual, en virtud de lo dispuesto por la normativa vigente en la materia, corresponden al Propietario,
           salvo en lo referente a aquellos materiales obtenidos bajo licencia, autorización o consentimiento de terceros.
 
           El Propietario y los
-          terceros licenciantes, retendrán en todo momento los derechos de propiedad intelectual sobre la Aplicación, así como sobre los diferentes
+          terceros licenciantes, retendrán en todo momento los derechos de propiedad intelectual sobre la Web, así como sobre los diferentes
           elementos que la componen, considerados de forma individual, en todas las copias que se realicen (cualquiera que sea el soporte
           al que se incorporen), concediendo sobre los mismos únicamente el derecho de uso.
 
           Cualquier derecho que no sea expresamente cedido,
           se entenderá reservado en favor del Propietario y los licenciantes de contenidos o elementos individuales. El Propietario dispone de los
-          derechos de propiedad intelectual y de explotación sobre el software empleado para el desarrollo y funcionamiento de la Aplicación,
-          y estará habilitado para descargar e instalar nuevas versiones del software de la Aplicación, actualizaciones y mejoras, con el fin
+          derechos de propiedad intelectual y de explotación sobre el software empleado para el desarrollo y funcionamiento de la Web,
+          y estará habilitado para descargar e instalar nuevas versiones del software de la Web, actualizaciones y mejoras, con el fin
           de perfeccionar las funcionalidades del servicio. El usuario no adquiere derecho alguno o licencia por el servicio contratado, sobre
           el software necesario para la prestación del servicio, ni tampoco sobre la información técnica de seguimiento del servicio, a
-          excepción de los derechos y licencias necesarios para la utilización y correcto funcionamiento de la Aplicación. Además de lo anterior,
-          el Propietario es responsable de la selección, diseño de la estructura y disposición de los contenidos de la Aplicación, así como quien
+          excepción de los derechos y licencias necesarios para la utilización y correcto funcionamiento de la Web. Además de lo anterior,
+          el Propietario es responsable de la selección, diseño de la estructura y disposición de los contenidos de la Web, así como quien
           ha tomado la iniciativa y asumido el riesgo de efectuar las inversiones sustanciales orientadas a la obtención, digitalización y
           presentación de la misma, correspondiéndole, por tanto, la protección que la Ley de Propiedad Intelectual (LPI) pueda conceder sobre
           dicha disposición y estructuración de datos.
 
-          El Propietario es también el único titular del diseño e imagen gráfica de la Aplicación,
+          El Propietario es también el único titular del diseño e imagen gráfica de la Web,
           reservándose las acciones que legalmente le correspondan contra las personas que pudieran realizar imitaciones o usos desleales de la misma.
 
 
 
           <br></br><br></br><b className="c-dark-1">4. DERECHOS DEL USUARIO</b><br></br><br></br>
 
-          Respecto a los posibles contenidos generados por el usuario, durante el uso de la Aplicación,
+          Respecto a los posibles contenidos generados por el usuario, durante el uso de la Web,
           aquél será el único titular de los derechos de propiedad intelectual sobre dichos contenidos. No obstante, cuando el Usuario comparta,
-          difunda o publique contenidos en la Aplicación, está concediendo una licencia no exclusiva, transferible y gratuita, para poder almacenar,
+          difunda o publique contenidos en la Web, está concediendo una licencia no exclusiva, transferible y gratuita, para poder almacenar,
           reproducir, distribuir, modificar, mantener o comunicar públicamente (difundir, publicar) el contenido generado por el Usuario.
 
 
-          En el supuesto de que el Usuario, comparta o publique contenidos en la Aplicación, que no haya creado o generado él mismo, será el único
+          En el supuesto de que el Usuario, comparta o publique contenidos en la Web, que no haya creado o generado él mismo, será el único
           responsable de haber obtenido previamente las correspondientes autorizaciones por parte de los legítimos autores de los citados contenidos.
 
 
-          En cualquier caso, el Propietario informa al Usuario de que, aunque el contenido pueda ser eliminado de la interfaz de la Aplicación,
+          En cualquier caso, el Propietario informa al Usuario de que, aunque el contenido pueda ser eliminado de la interfaz de la Web,
           éste puede conservarse en las copias de seguridad del Propietario durante un cierto tiempo, para después ser suprimido de forma efectiva.
 
 
           Asimismo, cabe mencionar que el contenido puede seguir siendo visible si se ha compartido con otros usuarios, y éstos han llegado a
-          descargar o guardar dicho contenido, excediendo estas actuaciones del ámbito o entorno de la Aplicación.
+          descargar o guardar dicho contenido, excediendo estas actuaciones del ámbito o entorno de la Web.
 
 
           <br></br><br></br><b className="c-dark-1">5. OBLIGACIONES DEL USUARIO</b><br></br><br></br>
 
 
-          El Usuario se compromete a utilizar la presente Aplicación y todo su contenido de conformidad con la ley, la moral, el orden público y
-          las presentes condiciones de uso. Asimismo, se compromete a hacer un uso adecuado de los servicios y/o contenidos de la aplicación.
+          El Usuario se compromete a utilizar la presente Web y todo su contenido de conformidad con la ley, la moral, el orden público y
+          las presentes condiciones de uso. Asimismo, se compromete a hacer un uso adecuado de los servicios y/o contenidos de la web.
 
 
           En particular, el Usuario se compromete a:
 
-          • No emplear la Aplicación para realizar actividades ilícitas o constitutivas de delito,
+          • No emplear la Web para realizar actividades ilícitas o constitutivas de delito,
           que atenten contra los derechos de terceros y/o que infrinjan la regulación sobre propiedad intelectual e industrial, o cualesquiera
           otras normas del ordenamiento jurídico aplicable.
 
           • No transmitir, introducir, difundir y poner a disposición de terceros, cualquier
           tipo de material e información (datos contenidos, mensajes, dibujos, archivos de sonido e imagen, fotografías, software, etc.), a
-          través de la Aplicación, que sean contrarios a la ley, la moral, el orden público y las presentes condiciones de uso.
+          través de la Web, que sean contrarios a la ley, la moral, el orden público y las presentes condiciones de uso.
 
           • No generar,
-          compartir o subir contenidos a la Aplicación, si son ilegales, engañosos, o discriminatorios, o si vulneran los derechos de otra persona.
+          compartir o subir contenidos a la Web, si son ilegales, engañosos, o discriminatorios, o si vulneran los derechos de otra persona.
 
 
           • La publicación o transmisión de cualquier contenido que resulte violento, obsceno, abusivo, racial, xenófobo o difamatorio.
 
 
-          • No introducir o subir virus o códigos maliciosos, o realizar actividades susceptibles de alterar el correcto funcionamiento de la Aplicación.
+          • No introducir o subir virus o códigos maliciosos, o realizar actividades susceptibles de alterar el correcto funcionamiento de la Web.
 
 
           • No recoger ni utilizar datos personales (incluida la imagen física) de otros usuarios sin su consentimiento expreso o contraviniendo
           lo dispuesto en el Reglamento General de Protección de Datos.
 
           La infracción de cualquiera de las normas contenidas en este apartado,
-          facultará al Propietario, para dar de baja de la Aplicación al usuario de manera inmediata, así como para eliminar contenidos generados
+          facultará al Propietario, para dar de baja de la Web al usuario de manera inmediata, así como para eliminar contenidos generados
           por el usuario, que puedan atentar contra los derechos de terceros, resultar inadecuados o ser contrarios al orden jurídico.
 
 
 
           <br></br><br></br><b className="c-dark-1">6. LIMITACIÓN DE RESPONSABILIDAD</b><br></br><br></br>
 
-          El Propietario no garantiza que, durante el uso de la Aplicación, no puedan producirse
+          El Propietario no garantiza que, durante el uso de la Web, no puedan producirse
           fallos o errores que dificulten el uso del servicio, generen imperfecciones, problemas o retrasos en el sistema.
 
 
@@ -341,12 +334,12 @@ const about = () => {
           <br></br><br></br><b className="c-dark-1">8. MODIFICACIONES</b><br></br><br></br>
 
           El Propietario se reserva el derecho a
-          efectuar, sin previo aviso, las modificaciones que considere oportunas para el correcto funcionamiento de la Aplicación, pudiendo cambiar,
+          efectuar, sin previo aviso, las modificaciones que considere oportunas para el correcto funcionamiento de la Web, pudiendo cambiar,
           suprimir o añadir tanto los contenidos y servicios que se prestan a través de la misma, como la forma en la que éstos aparecen presentados
           o localizados.
 
           El Propietario intentará, en la medida de lo posible, mantener actualizada y libre de fallos la información contenida
-          en la presente Aplicación, si bien, en cualquier caso, el acceso y utilización de la misma es responsabilidad exclusiva del Usuario.
+          en la presente Web, si bien, en cualquier caso, el acceso y utilización de la misma es responsabilidad exclusiva del Usuario.
 
 
 
@@ -357,7 +350,7 @@ const about = () => {
           puedan resultar oportunas, así como a solicitar las indemnizaciones pertinentes por parte del Usuario.
 
           El Propietario perseguirá
-          cualquier utilización indebida de la Aplicación o de sus contenidos así como las infracciones de los derechos que le correspondan a
+          cualquier utilización indebida de la Web o de sus contenidos así como las infracciones de los derechos que le correspondan a
           él o a sus licenciantes, especialmente en lo relativo a los derechos de propiedad intelectual e industrial.
 
 
