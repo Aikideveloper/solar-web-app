@@ -50,8 +50,9 @@ const mailData = {
  const mailUserData = {
   "from": "autoconsumosolarmarketing@gmail.com",
   "to": `${req.body.email}`,
-  "subject": `SOLICITUD DE PRESUPUESTO WEB`,
-  "html": `Tu solicitud de presupuesto ha sido enviado, nos pondremos en contacto contigo lo antes posible`
+  "subject": `Autoconsumo Solar - Solicitud de presupuesto`,
+  "html": `Tu solicitud de presupuesto ha sido enviada, uno de nuestros asesores energéticos se pondrá en contacto contigo en un plazo máximo de 24-48h laborables.<br>
+  <br>Un cordial saludo,<br><br>Autoconsumo Solar`
  }
 
   await new Promise((resolve, reject) => {
