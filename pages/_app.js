@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       <Footer/>
       <FloatingWhatsApp
         avatar="/img/logo_nav.png"
-        phoneNumber="+34699031554"
+        phoneNumber="+34636920777"
         accountName="Autoconsumo 🔆 Solar"
         statusMessage="Preguntanos!"
         chatMessage={`🔆 Hola! ¿Cómo podemos ayudarte?`}
