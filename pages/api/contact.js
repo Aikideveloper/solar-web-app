@@ -31,7 +31,7 @@ const formatDate = date => {
     return [date.getMonth()+1,
                date.getDate(),
                date.getFullYear()].join('/')+' '+
-              [date.getHours() + 1,
+              [date.getHours() + 2,
                 date.getMinutes(),
                 date.getSeconds()].join(':');
 }
@@ -39,7 +39,7 @@ const formatDate = date => {
 const mailData = {
   "from": "autoconsumosolarmarketing@gmail.com",
   "to": "autoconsumosolarmarketing@gmail.com",
-  "subject": `SOLICITUD DE PRESUPUESTO WEB - ${req.body.province} - ${formatDate(new Date)}`,
+  "subject": `SOLICITUD DE PRESUPUESTO WEB - ${req.body.province} - ${formatDate(new Date())}`,
   "html": `
     nombre: ${req.body.name}<br>
     email: ${req.body.email}<br>
