@@ -80,7 +80,7 @@ const about = () => {
             <div className="col-md-6">
               <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary c-bold">3.</span> Obtén tu presupuesto totalmente gratis</h2>
               <hr className="bg-app-primary" />
-              <p>Conoce el coste estimado de tu instalación incluyendo diseño, montaje y tramitación de la subvención. No incluye la tramitación del permiso de obra específico de cada</p>
+              <p>Conoce el coste estimado de tu instalación incluyendo diseño, montaje y tramitación de la subvención. No incluye la tramitación del permiso de obra específico de cada municipio.</p>
             </div>
           </div>
       {/*
