@@ -14,7 +14,7 @@ const about = () => {
             <div className="col-md-10 col-lg-12">
               <h1 className="display-5">Calcula tu propia <i className="fas fa-bolt c-primary"></i> instalación sostenible</h1>
               <div className="row">
-                <p className="lead col-lg-6 mx-auto">Where you choose to work has impact on your productivity and creativity. It also says a lot about your business. We are the right office space.</p>
+                <p className="lead col-lg-6 mx-auto">Autoconsumo Solar es ideal para el cálculo de sistemas fotovoltaicos aislados, instalaciones conectadas a red y bombeos solares.</p>
               </div>
             </div>
           </div>
@@ -44,17 +44,17 @@ const about = () => {
               ></Image>
             </div>
             <div className="col-md-6">
-              <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary">1.</span> Lockers</h2>
+              <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary">1.</span> Ubica tu instalación</h2>
               <hr className="bg-app-primary" />
-              <p>Lockers come in all different shapes and sizes and can be hired in any building, even if it’s not your home building.</p>
+              <p>Nos permitirá conocer exactamente los datos meteorológicos de radiación solar de la zona para dimensionar tu instalación de autoconsumo.</p>
             </div>
           </div>
 
           <div className="row align-items-center xs-reverse-row">
             <div className="col-md-6 text-right">
-              <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary">2.</span> Building address/Mail handling</h2>
+              <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary">2.</span> Introduce tu consumo mensual</h2>
               <hr className="bg-app-primary" />
-              <p>A Czech business address for you and your mail. We can either hold your mail for you to collect, or forward it on to wherever you are.</p>
+              <p>Sabiendo tu consumo energético podremos calcular qué potencia necesita tu instalación fotovoltaica para cubrir tus necesidades.</p>
             </div>
             <div className="col-md-6 text-center pt-2 pb-2">
               <Image
@@ -78,9 +78,9 @@ const about = () => {
               ></Image>
             </div>
             <div className="col-md-6">
-              <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary c-bold">3.</span> Call answering</h2>
+              <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary c-bold">3.</span> Obtén tu presupuesto totalmente gratis</h2>
               <hr className="bg-app-primary" />
-              <p>We’ll provide someone to answer your calls professionally using your company name. They’ll be put through to you, or we’ll take a message if you’re unavailable.</p>
+              <p>Conoce el coste estimado de tu instalación incluyendo diseño, montaje y tramitación de la subvención. No incluye la tramitación del permiso de obra específico de cada</p>
             </div>
           </div>
       {/*

@@ -13,9 +13,9 @@ const Navbar = () => {
       <Image alt="logo image" src="/img/logo_nav.png" width="40" height="40" id={styles.logo} />
       <input ref={inputRef} type='checkbox' id='responsive-menu' /><label></label>
       <ul>
-        <li onClick={closeMenu}><Link href='/'>Home</Link></li>
-        <li onClick={closeMenu}><Link href='/about'>About</Link></li>
-        <li onClick={closeMenu}><Link href='/contact'>Contact Us</Link></li>
+        <li onClick={closeMenu}><Link href='/'>Inicio</Link></li>
+        <li onClick={closeMenu}><Link href='/about'>Nosotros</Link></li>
+        <li onClick={closeMenu}><Link href='/contact'>Contacto</Link></li>
         <li onClick={closeMenu}><Link href='/lgpd'>Política de privacidad</Link></li>
       </ul>
       <div id={styles.buttonContact} className={`${styles.contact} px-4`}>
