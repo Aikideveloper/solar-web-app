@@ -23,7 +23,7 @@
 .imageHeader {
   background-size: cover;
   background-position: center;
-  filter: grayscale(40%)
+  filter: grayscale(20%)
 }
 
 .autoconsume {
