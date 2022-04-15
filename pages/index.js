@@ -29,8 +29,8 @@ export default function Home() {
                 Súmate al cambio y empieza  <br></br> a ahorrar en la factura de la luz.
               </p>
               <div className="text-center mt-3">
-                <Link href='/contact'>
-                  <a  className={`${buttonStyles.Button} ${buttonStyles.Button_primary}`} >Solicita tu presupuesto</a>
+                <Link href='/about'>
+                  <a  className={`${buttonStyles.Button} ${buttonStyles.Button_primary}`} >Simula tu instalación</a>
                 </Link>
               </div>
 
