@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -9,14 +8,6 @@ const about = () => {
 
   return (
     <div id="AboutPage" className="pt-5">
-    //juanma-ini
-      <Head>
-        <title>Solar | Instalación de placas solares | Autoconsumo Solar</title>
-        <meta name="description" content="Solar: Instalar placas solares en tu vivienda y solicita las subvenciones. Ahorro de un 50% en la instalación ¡Infórmate sin compromiso! - Autoconsumo Solar" />
-        <link rel="icon" href="/img/logo_nav.png" />
-      </Head>
-    //juanma-fin
-    
       <div className="jumbotron jumbotron-fluid mb-0">
         <div className="container p-4">
           <div className="row justify-content-center text-center">
