@@ -51,7 +51,7 @@ export default function Home() {
               <h2 className="c-title pb-2 border-bottom border-app">Aprovecha <b>las subvenciones</b></h2>
 
               <p className={`${styles.section_1_p} default-text c-gray-2`}>
-                Haz el cambio al autoconsumo y consigue un <b>50% de ahorro</b> en la instalación de tus paneles y baterías. No te preocupes, te lo gestionamos todo.
+                Haz el cambio al autoconsumo y consigue un <b>50% de ahorro</b> en la instalación de tus <b>paneles solares y baterías</b>. No te preocupes, te lo gestionamos todo.
               </p>
               <div className="pt-3 text-sm-center">
                 <Link href='/contact'>
