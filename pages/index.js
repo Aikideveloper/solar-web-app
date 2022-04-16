@@ -74,9 +74,9 @@ export default function Home() {
       </section>
       <section className="bg-app-primary" id="contact-form">
         <div className="mx-auto justify-content-center container p-5 mb-5">
-          <h4 className="c-dark text-center">
+          <h3 className="c-dark text-center">
             «La radiación solar en España es un privilegio que debemos aprovechar»
-          </h4>
+          </h3>
         </div>
       </section>
 
@@ -99,7 +99,7 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="text-center">
-                <h4 className="c-title">Solución integral</h4>
+                <h3 className="c-title">Solución integral</h3>
                 <p className="c-gray-2">Nos encargamos de todo. Desde el estudio previo hasta la instalación completa. Te asesoramos durante todo el proceso.</p>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="text-center">
-                <h4 className="c-title">Maximiza el ahorro</h4>
+                <h3 className="c-title">Maximiza el ahorro</h3>
                 <p className="c-gray-2">Reduce tu factura de la luz desde el primer día y recibe una compensación por la energía que no consumas</p>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="text-center">
-                <h4 className="c-title">Energía verde</h4>
+                <h3 className="c-title">Energía verde</h3>
                 <p className="c-gray-2">Consume tu propia energía renovable y protege al medio ambiente</p>
               </div>
             </div>
