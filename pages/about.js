@@ -10,7 +10,7 @@ const about = () => {
   return (
     <div id="AboutPage" className="pt-5">
       <Head>
-        <title>About | Instalación de placas solares | Autoconsumo Solar</title>
+        <title>Solar | Instalación de placas solares | Autoconsumo Solar</title>
          <meta name="description" content="Solar: Instalar placas solares en tu vivienda y solicita las subvenciones. Ahorro de un 50% en la instalación ¡Infórmate sin compromiso! - Autoconsumo Solar" />
         <link rel="icon" href="/img/logo_nav.png" />
       </Head>
