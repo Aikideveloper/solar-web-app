@@ -64,7 +64,7 @@ export default function Home() {
               <Image
                 width="500"
                 height="500"
-                alt="solar and energy"
+                alt="solar placas solares"
                 src="/img/sun_care.png"
                 className={`${styles.section_1_img} w-100`}
               ></Image>
