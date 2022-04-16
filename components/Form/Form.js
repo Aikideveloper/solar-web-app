@@ -112,7 +112,7 @@ const Form = () => {
           <Link href="/lgpd"><a className="text-primary">He leído y acepto los términos y condiciones</a></Link> de nuestra Política de privacidad
           para el tratamiento y cesión de sus datos personales a terceros acorde con la LOPD
           y la Agencia Española de Protección de Datos. Tratamos la información que nos facilita
-          con el fin de ofrecerle la propuesta a través de email o de una llamada telefónica
+          con el fin de ofrecerle la propuesta a través de email o de una llamada telefónica.
         </span>
         {fillCheckbox && <p className="feedback text-danger mt-2">*Debes aceptar nuestra política de privacidad </p>}
       </div>
