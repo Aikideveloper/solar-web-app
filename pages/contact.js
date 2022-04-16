@@ -1,9 +1,15 @@
 import React from 'react';
 import Form from '../components/Form/Form';
+import Head from "next/head";
 
 const contact = () => {
   return (
     <div>
+      <Head>
+        <title>About | Instalación de placas solares | Autoconsumo Solar</title>
+         <meta name="description" content="Solar: Instalar placas solares en tu vivienda y solicita las subvenciones. Ahorro de un 50% en la instalación ¡Infórmate sin compromiso! - Autoconsumo Solar" />
+        <link rel="icon" href="/img/logo_nav.png" />
+      </Head>
       <div className="contact-desktop container pt-5 vh-100 d-flex align-items-center">
         <div id="leftHalf" className="d-flex align-items-center justify-content-center ">
           <div className="p-4">
