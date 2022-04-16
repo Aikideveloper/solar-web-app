@@ -10,7 +10,7 @@ const Navbar = () => {
   }
   return (
     <nav id={styles.menu}>
-      <Image alt="logo image" src="/img/logo_nav.png" width="40" height="40" id={styles.logo} />
+      <Image alt="autoconsumo solar" title="autoconsumo solar" src="/img/logo_nav.png" width="40" height="40" id={styles.logo} />
       <input ref={inputRef} type='checkbox' id='responsive-menu' /><label></label>
       <ul>
         <li onClick={closeMenu}><Link href='/'>Inicio</Link></li>
