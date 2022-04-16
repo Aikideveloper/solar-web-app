@@ -38,7 +38,8 @@ const about = () => {
               <Image
                 width="250"
                 height="450"
-                alt="solar and energy"
+                alt="autoconsumo solar españa"
+                title="placas solares españa"
                 src="/img/1_mobile.png"
                 className="w-100"
               ></Image>
@@ -60,7 +61,8 @@ const about = () => {
               <Image
                 width="250"
                 height="450"
-                alt="solar and energy"
+                alt="solar consumo electrico"
+                title="consumo electrico vivienda"
                 src="/img/2_mobile.png"
                 className="w-100"
               ></Image>
@@ -72,7 +74,8 @@ const about = () => {
               <Image
                 width="250"
                 height="450"
-                alt="solar and energy"
+                alt="subvenciones placas solares"
+                title="subvenciones placas españa"
                 src="/img/3_mobile.png"
                 className="w-100"
               ></Image>
