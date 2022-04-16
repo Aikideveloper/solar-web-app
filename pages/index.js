@@ -64,8 +64,8 @@ export default function Home() {
               <Image
                 width="500"
                 height="500"
-                alt="solar placas solares"
-                title="placas solares"
+                alt="solar placas solares vivienda"
+                title="placas solares vivienda"
                 src="/img/sun_care.png"
                 className={`${styles.section_1_img} w-100`}
               ></Image>
@@ -94,7 +94,8 @@ export default function Home() {
                 <Image
                   width="200"
                   height="200"
-                  alt="solar and energy"
+                  alt="solar placas solares"
+                  title="placas solares"
                   src="/img/solar-panel-icon.svg"
                   className="w-100"
                 ></Image>
@@ -110,7 +111,8 @@ export default function Home() {
                 <Image
                   width="200"
                   height="200"
-                  alt="solar and energy"
+                  alt="solar ahorro"
+                  title="ahorro energia"
                   src="/img/voltmeter.svg"
                   className="w-100"
                 ></Image>
@@ -126,7 +128,8 @@ export default function Home() {
                 <Image
                   width="200"
                   height="200"
-                  alt="solar and energy"
+                  alt="solar energia"
+                  title="energia renovable"
                   src="/img/renewable.svg"
                   className="w-100"
                 ></Image>
