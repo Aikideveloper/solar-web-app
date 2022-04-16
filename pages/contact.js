@@ -17,7 +17,7 @@ const contact = () => {
       <div className="contact-mobile ">
         <div className="contact-overlay container pt-5 d-flex align-items-center">
           <div className="pt-2 pb-4">
-            <h1 className="pb-3 c-white">Solicita tu presupuesto gratuito</h1>
+            <h1 className="pb-3 c-white">Solicita tu presupuesto</h1>
             <Form />
           </div>
         </div>
