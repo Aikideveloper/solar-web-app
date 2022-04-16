@@ -37,7 +37,7 @@ export default function Home() {
             </div>
             <div
               className={`${styles.imageHeader} col-xl-6 col-md-6 col-sm-12`}
-              style={{ backgroundImage: "url(/img/intro_mobile.jpg)" }}
+              style={{ backgroundImage: "url(/img/village-solar.jpg)" }}
             >
             </div>
           </div>
