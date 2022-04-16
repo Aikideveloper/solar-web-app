@@ -74,9 +74,9 @@ export default function Home() {
       </section>
       <section className="bg-app-primary" id="contact-form">
         <div className="mx-auto justify-content-center container p-5 mb-5">
-          <h4 className="c-dark text-center">
+          <h3 className="c-dark text-center">
             «La radiación solar en España es un privilegio que debemos aprovechar»
-          </h4>
+          </h3>
         </div>
       </section>
 
