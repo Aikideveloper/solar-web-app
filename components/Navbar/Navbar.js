@@ -14,7 +14,7 @@ const Navbar = () => {
       <input ref={inputRef} type='checkbox' id='responsive-menu' /><label></label>
       <ul>
         <li onClick={closeMenu}><Link href='/'>Inicio</Link></li>
-        <li onClick={closeMenu}><Link href='/about'>Nosotros</Link></li>
+        <li onClick={closeMenu}><Link href='/nosotros'>Nosotros</Link></li>
         <li onClick={closeMenu}><Link href='/contact'>Contacto</Link></li>
         <li onClick={closeMenu}><Link href='/lgpd'>Política de privacidad</Link></li>
       </ul>
