@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Solar | Instalación de placas solares | Autoconsumo Solar</title>
      //   <meta name="description" content="Solar: Instalar placas solares en tu vivienda y solicita las subvenciones. Ahorro de un 50% en la instalación ¡Infórmate sin compromiso! - Autoconsumo Solar" />
-         <meta name="google-site-verification" content="googlefffb206032024895.html"/>  
+         <meta name="google-site-verification" content="WEu3wgCSvezhNvdsrq4I9umm3hAAO-Mu2jqnBufkkWY" />
         <link rel="icon" href="/img/logo_nav.png" />
       </Head>
 
