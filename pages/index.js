@@ -22,7 +22,7 @@ export default function Home() {
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center text-align-center flex-column">
               <h1 className={`${styles.title} pl-3 text-center`}>
                 <span className={styles.autoconsume}>Autoconsumo </span>
-                <span className={styles.solar}>Solarrrrr</span>
+                <span className={styles.solar}>Solar</span>
               </h1>
 
               <p className={`${styles.description} pl-3 text-center`}>
