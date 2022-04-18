@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Solar | Instalación de placas solares | Autoconsumo Solar</title>
+        <title>Solar | Instalación de placas solares | Autoconsumo Solarrrrrrrr</title>
         <meta name="google-site-verification" content="WEu3wgCSvezhNvdsrq4I9umm3hAAO-Mu2jqnBufkkWY"/>
           <link rel="icon" href="/img/logo_nav.png" />
       </Head>
