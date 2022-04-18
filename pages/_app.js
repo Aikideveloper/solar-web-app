@@ -4,7 +4,26 @@ import FloatingWhatsApp from 'react-floating-whatsapp';
 import '../styles/globals.css';
 import Footer from '../components/Footer/Footer';
 
+import Script from 'next/script';
+import {useEffect} from 'react';
+import {useRouter} from 'next/script';
+import * as ga from '../lib/google-analytics'
+
 function MyApp({ Component, pageProps }) {
+
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url)
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+
+  }, [router.events])
 
   return (
     <div id="MyApp">
@@ -14,6 +33,17 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"></link>
       </Head>
       <Navbar />
+      <Script scr={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`} strategy='afterInteractive'/>
+      <Script id="google-analytics-script" strategy='afterInteractive'>
+        {`
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+       
+         gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}');
+        `}
+
+      </Script>
       <Component {...pageProps} />
       <Footer/>
       <FloatingWhatsApp
