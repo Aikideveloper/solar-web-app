@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer';
 import Script from 'next/script';
 import {useEffect} from 'react';
 import {useRouter} from 'next/router';
-import * as ga from '../lib/google-analytics';
+import * as gtag from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps }) {
 
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      ga.pageview(url)
+      gtag.pageview(url)
     }
 
     router.events.on('routeChangeComplete', handleRouteChange)
@@ -28,8 +28,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div id="MyApp">
 
-      <Script scr={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`} strategy='lazyOnload'/>
-      <Script id="google-analytics-script" strategy='lazyOnload'
+      <Script scr={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`} strategy="afterInteractive"/>
+      <Script id="google-analytics-script" strategy="afterInteractive"
         dangerouslySetInnerHTML={{
         __html: `
          window.dataLayer = window.dataLayer || [];
