@@ -27,22 +27,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div id="MyApp">
-
-      <Script async scr={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`} strategy="afterInteractive"/>
-      <Script id="google-analytics-script" strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-        __html: `
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-       
-         gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}', {
-           page_path: window.location.pathname,
-         });
-        `,
-        }}
-
-      />
+      
 
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
