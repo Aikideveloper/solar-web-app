@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer';
 import Script from 'next/script';
 import {useEffect} from 'react';
 import {useRouter} from 'next/router';
-import * as ga from '../lib/google-analytics'
+import * as ga from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps }) {
 

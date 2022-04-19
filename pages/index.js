@@ -5,9 +5,23 @@ import Form from '../components/Form/Form';
 import styles from '../styles/Home.module.css';
 import buttonStyles from '../components/Button/Button.module.css';
 import Link from 'next/link';
+import * as ga from '../lib/google-analytics';
 
 
 export default function Home() {
+
+  const addToCart = () => {
+    ga.event({
+      action: "prueba",
+      category: "test",
+      label: "item",
+      value: "testeando"
+    });
+
+  }
+
+
+
   return (
     <div className={styles.container}>
       <Head>
