@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
 
       <Head>
 
-      <Script scr={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`} strategy="afterInteractive"/>
+      <Script async scr={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`} strategy="afterInteractive"/>
       <Script id="google-analytics-script" strategy="afterInteractive"
         dangerouslySetInnerHTML={{
         __html: `
