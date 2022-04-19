@@ -11,20 +11,7 @@ import * as ga from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps }) {
 
-  const router = useRouter()
-
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      ga.pageview(url)
-    }
-
-    router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-
-  }, [router.events])
-
+  
   return (
     <div id="MyApp">
       <Head>
