@@ -59,7 +59,7 @@ const about = () => {
           </div>
 
           <div className="row align-items-center xs-reverse-row">
-            <div className="col-md-6 text-left">
+            <div className="col-md-6 text-right">
               <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary">2.</span> Introduce tu consumo mensual</h2>
               <hr className="bg-app-primary" />
               <p>Sabiendo tu consumo energético podremos calcular qué potencia necesita tu instalación fotovoltaica para cubrir tus necesidades. 
