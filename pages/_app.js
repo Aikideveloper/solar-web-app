@@ -4,7 +4,6 @@ import FloatingWhatsApp from 'react-floating-whatsapp';
 import '../styles/globals.css';
 import Footer from '../components/Footer/Footer';
 
-import Script from 'next/script';
 import {useEffect} from 'react';
 import {useRouter} from 'next/router';
 import * as gtag from '../lib/google-analytics';
@@ -27,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div id="MyApp">
-      
+
 
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>

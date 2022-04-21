@@ -53,7 +53,8 @@ const about = () => {
             <div className="col-md-6">
               <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary">1.</span> Ubica tu instalación</h2>
               <hr className="bg-app-primary" />
-              <p>Nos permitirá conocer exactamente los datos meteorológicos de radiación solar de la zona para dimensionar tu instalación de autoconsumo.</p>
+              <p>Empleamos datos de irradiación solar proporcionados por el Ministerio de Agricultura, Alimentación y Medio Ambiente para dimensionar tu instalación
+                de autoconsumo. Nos permitirá calcular con exactitud las características técnicas del campo fotovoltaico a instalar gracias a nuestros algoritmos de precisión.</p>
             </div>
           </div>
 
@@ -61,7 +62,9 @@ const about = () => {
             <div className="col-md-6 text-right">
               <h2 className=""><span style={{ fontWeight: "700" }}className="c-primary">2.</span> Introduce tu consumo mensual</h2>
               <hr className="bg-app-primary" />
-              <p>Sabiendo tu consumo energético podremos calcular qué potencia necesita tu instalación fotovoltaica para cubrir tus necesidades.</p>
+              <p>Sabiendo tu consumo energético podremos calcular qué potencia necesita tu instalación fotovoltaica para cubrir tus necesidades. 
+                Si no dispones de una factura eléctrica por ejemplo en el caso de una nueva vivienda, puedes específicar 
+                cada electrodoméstico con su potencia y posibles horas de uso para un cálculo más preciso.</p>
             </div>
             <div className="col-md-6 text-center pt-2 pb-2">
               <Image
