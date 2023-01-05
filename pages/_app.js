@@ -3,13 +3,15 @@ import Navbar from '../components/Navbar/Navbar';
 import FloatingWhatsApp from 'react-floating-whatsapp';
 import '../styles/globals.css';
 import Footer from '../components/Footer/Footer';
+import { useRouter } from 'next/router';
 
 import {useEffect} from 'react';
 import {useRouter} from 'next/router';
 import * as gtag from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps }) {
-  const forbiddenPath = window.location.pathname === "/lgpd_test"
+  const { asPath } = useRouter();
+  const forbiddenPath = asPath === "/lgpd_test"
   const router = useRouter()
 
   useEffect(() => {
