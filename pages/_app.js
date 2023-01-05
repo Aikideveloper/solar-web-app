@@ -11,7 +11,7 @@ import * as gtag from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps }) {
   const { asPath } = useRouter();
-  const forbiddenPath = asPath === "/lgpd_test"
+  const forbiddenPath = asPath === '/lgpd_test';
   const router = useRouter()
 
   useEffect(() => {
