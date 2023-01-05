@@ -17,6 +17,7 @@ const Navbar = () => {
         <li onClick={closeMenu}><Link href='/about'>Simula tu instalación</Link></li>
         <li onClick={closeMenu}><Link href='/contact'>Contacto</Link></li>
         <li onClick={closeMenu}><Link href='/lgpd'>Política de privacidad</Link></li>
+        <li onClick={closeMenu}><Link href='/lgpd_test'>Política de privacidad tests</Link></li>
       </ul>
       <div id={styles.buttonContact} className={`${styles.contact} px-4`}>
       <li className={`${styles.contact}`} onClick={closeMenu}><Link href='/contact'>Contacto</Link></li>
