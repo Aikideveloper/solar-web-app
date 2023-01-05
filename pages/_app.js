@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar/Navbar';
 import FloatingWhatsApp from 'react-floating-whatsapp';
 import '../styles/globals.css';
 import Footer from '../components/Footer/Footer';
-import { useRouter } from 'next/router';
 
 import {useEffect} from 'react';
 import {useRouter} from 'next/router';
