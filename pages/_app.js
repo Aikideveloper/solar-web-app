@@ -12,6 +12,9 @@ function MyApp({ Component, pageProps }) {
 const router = useRouter()
 const { asPath } = useRouter();
 const forbiddenPath = asPath === '/lgpd_autoconsumo_solar' || asPath === '/lgpd_solar_panel_optimal_tilt';
+/* ESTO HABRIA K PONER DESPUES dnd el Navbar en el return PARA QUE EL NAVBAR SE OCULTE SI NO SE CUMPLE forbiddenPath
+tal que :
+  !forbiddenPath && <Navbar />*/
 
 
   useEffect(() => {
@@ -33,11 +36,9 @@ const forbiddenPath = asPath === '/lgpd_autoconsumo_solar' || asPath === '/lgpd_
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossOrigin="anonymous"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"></link>
       </Head>
-      {!forbiddenPath && <Navbar />}
+      <Navbar />
       <Component {...pageProps} />
-      <Footer className={forbiddenPath ? 'hidden' : 'footer'}>
-      {/* <Link href="/lgpd">Términos y condiciones</Link> */}
-    </Footer>
+      <Footer/>
       <FloatingWhatsApp
         avatar="/img/logo_nav.png"
         phoneNumber="+34636920777"
