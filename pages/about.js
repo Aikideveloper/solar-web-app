@@ -25,12 +25,12 @@ const about = () => {
             </div>
           </div>
           <div className="lead row justify-content-center">
-            <div className="col-lg-4 col-xl-3 col-xs-12 text-center mt-3">
-              {/* <Button type="primary" content="Solicita tu presupuesto"></Button> */}
+           {/* <div className="col-lg-4 col-xl-3 col-xs-12 text-center mt-3">
+              { <Button type="primary" content="Solicita tu presupuesto"></Button> }
               <Link href='/contact'>
                 <a className={`${styles.Button} ${styles.Button_primary}`} >Solicita tu presupuesto</a>
               </Link>
-            </div>
+            </div>*/}
             <div className="col-lg-4 col-xl-3 col-xs-12 text-center mt-3">
               <Button action="https://play.google.com/store/apps/details?id=es.autoconsumo.solar.calculo.fotovoltaica&gl=ES" type="primary" content="Descarga la aplicación" outline></Button>
             </div>

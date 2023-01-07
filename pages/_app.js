@@ -9,9 +9,10 @@ import {useRouter} from 'next/router';
 import * as gtag from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps }) {
-  const { asPath } = useRouter();
-  const forbiddenPath = asPath === '/lgpd_test';
-  const router = useRouter()
+const router = useRouter()
+const { asPath } = useRouter();
+const forbiddenPath = asPath === '/lgpd_autoconsumo_solar' || asPath === '/lgpd_solar_panel_optimal_tilt';
+
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -34,7 +35,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       {!forbiddenPath && <Navbar />}
       <Component {...pageProps} />
-      <Footer/>
+      <Footer className={forbiddenPath ? 'hidden' : 'footer'}>
+      {/* <Link href="/lgpd">Términos y condiciones</Link> */}
+    </Footer>
       <FloatingWhatsApp
         avatar="/img/logo_nav.png"
         phoneNumber="+34636920777"

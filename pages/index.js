@@ -67,11 +67,11 @@ export default function Home() {
               <p className={`${styles.section_1_p} default-text c-gray-2`}>
                 Haz el cambio al autoconsumo y consigue un <b>50% de ahorro</b> en la instalación de tus <b>paneles solares y baterías</b>.<br></br> ¡No te preocupes, te lo gestionamos todo!
               </p>
-              <div className="pt-3 text-sm-center">
+              {/*<div className="pt-3 text-sm-center">
                 <Link href='/contact'>
                   <a  className={`${buttonStyles.Button} ${buttonStyles.Button_primary}`} >Solicita tu presupuesto</a>
                 </Link>
-              </div>
+                </div>*/}
 
             </div>
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex align-items-end justify-content-end">
@@ -159,7 +159,7 @@ export default function Home() {
       </section>
 
 
-      <section id="contact-form" className="container">
+      {/*<section id="contact-form" className="container">
         <h2 className="c-title pb-2 border-bottom border-app">Solicita <b>tu presupuesto</b> sin compromiso</h2>
         <div className="row mx-auto justify-content-center mb-5 ">
           <div className="col-xs-12 col-md-6 col-xl-6 mt-5">
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+              </section>*/}
     </div>
   )
 }

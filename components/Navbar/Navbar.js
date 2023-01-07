@@ -15,12 +15,14 @@ const Navbar = () => {
       <ul>
         <li onClick={closeMenu}><Link href='/'>Inicio</Link></li>
         <li onClick={closeMenu}><Link href='/about'>Simula tu instalación</Link></li>
-        <li onClick={closeMenu}><Link href='/contact'>Contacto</Link></li>
-        <li onClick={closeMenu}><Link href='/lgpd'>Política de privacidad</Link></li>
+        {/*<li onClick={closeMenu}><Link href='/contact'>Contacto</Link></li>
+        <li onClick={closeMenu}><Link href='/lgpd'>Política de privacidad</Link></li>*/}
+        <li onClick={closeMenu}><Link href='/lgpd_autoconsumo_solar'>Política de privacidad Autoconsumo</Link></li>
+        <li onClick={closeMenu}><Link href='/lgpd_solar_panel_optimal_tilt'>Política de privacidad Solar Panel Optimal Tilt</Link></li>
       </ul>
-      <div id={styles.buttonContact} className={`${styles.contact} px-4`}>
+      {/*<div id={styles.buttonContact} className={`${styles.contact} px-4`}>
       <li className={`${styles.contact}`} onClick={closeMenu}><Link href='/contact'>Contacto</Link></li>
-      </div>
+  </div>*/}
     </nav>
   );
 };

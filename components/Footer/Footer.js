@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright text-center pb-3">
-        <Link href="/lgpd">Términos y condiciones</Link>
+        <Link href="/lgpd_autoconsumo_solar">Términos y condiciones</Link>
       </div>
 
     </footer>
